@@ -1,0 +1,22 @@
+<div *ngFor="let vaga of vagas">
+
+  <mat-card class="example-card" color="primary">
+
+    <mat-card-title-group>
+      <mat-card-title>{{vaga.descricao}}</mat-card-title>
+      <mat-card-subtitle>Código da vaga : {{vaga.id}} </mat-card-subtitle>
+      <img mat-card-lg-image src="assets\imgs\{{vaga.img}}" alt="Ilustração da vaga">
+    </mat-card-title-group>
+
+    <mat-card-content>
+      <p>Requisitos : {{vaga.req_obrigatorio}}</p>
+      <p>Diferencial: {{vaga.req_desejado}}</p>
+      <p>Remuneração : $R{{vaga.remunaracao}},00</p>
+      <p>Benefícios: {{vaga.beneficios}}</p>
+    </mat-card-content>
+
+  </mat-card>
+
+</div>
+
+

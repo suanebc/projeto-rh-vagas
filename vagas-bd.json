@@ -1,0 +1,58 @@
+{
+  "vaga": [
+    {
+      "_id": 1,
+      "descricao": "Desenvolvedor Júnior",
+      "img": "jr.png",
+      "req_obrigatorio": "Java, framework, Git",
+      "req_desejado": "WebAPI",
+      "remunaracao": 4500,
+      "beneficios": "vale refeição, gympass, plano de saúde"
+    },
+    {
+      "_id": 2,
+      "descricao": "Designer - UX/UI",
+      "img": "designer.png",
+      "req_obrigatorio": "Figma, Ps, Desing Pattern",
+      "req_desejado": "Conhecimentos de Programação",
+      "remunaracao": 3000,
+      "beneficios": "vale refeição, gympass, plano de saúde"
+    },
+    {
+      "_id": 3,
+      "descricao": "Desenvolvedor Sênior",
+      "img": "lider.png",
+      "req_obrigatorio": "Java, Jenkins, MySQL",
+      "req_desejado": "Perfil de liderança",
+      "remunaracao": 5000,
+      "beneficios": "vale refeição, gympass, plano de saúde"
+    },
+    {
+      "_id": 4,
+      "descricao": "Desenvolvedor Back-end Java",
+      "img": "developer.png",
+      "req_obrigatorio": "Java",
+      "req_desejado": "Gerenciamento de Projetos",
+      "remunaracao": 5000,
+      "beneficios": "vale refeição, gympass, plano de saúde"
+    },
+    {
+      "id": "5",
+      "descricao": "Desenvolvedor Front-end jr",
+      "img": "dev1.png",
+      "req_obrigatorio": "html, css, Javascript",
+      "req_desejado": "Angular",
+      "remunaracao": "555",
+      "beneficios": "plano de saúde"
+    },
+    {
+      "id": "6",
+      "descricao": "Desenvolvedor Sênior",
+      "img": "dev1.png",
+      "req_obrigatorio": "html, css, Javascript",
+      "req_desejado": "framework",
+      "remunaracao": "2000",
+      "beneficios": "plano de saúde"
+    }
+  ]
+}

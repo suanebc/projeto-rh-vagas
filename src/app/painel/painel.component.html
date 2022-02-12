@@ -1,0 +1,72 @@
+<h2 class="titulo2"> Cadastrar </h2>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Id</mat-label>
+    <input matInput placeholder="codigo da vaga..." value="" name="id" [(ngModel)] = "vaga.id">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Descrição</mat-label>
+    <input matInput placeholder="nome da função..." value="" name="vaga.descricao" [(ngModel)] = "vaga.descricao">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Imagem</mat-label>
+    <input matInput placeholder="" value="" name="vaga.img" [(ngModel)] = "vaga.img">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Requisitos Obrigatórios</mat-label>
+    <input matInput placeholder="" value="" name="vaga.req_obrigatorio" [(ngModel)] = "vaga.req_obrigatorio">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Requisitos Desejaveis</mat-label>
+    <input matInput placeholder="" value="" name="vaga.req_desejado" [(ngModel)] = "vaga.req_desejado">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Remuneração</mat-label>
+    <input matInput placeholder="R$" value="" name="vaga.remunaracao" [(ngModel)] = "vaga.remunaracao">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Benefícios</mat-label>
+    <input matInput placeholder="" value="" name="vaga.beneficios" [(ngModel)] = "vaga.beneficios">
+  </mat-form-field>
+
+  <div class="example-button-row">
+    <button mat-raised-button color="primary" (click)="cadastrar()">Cadastrar Vaga</button>
+    <button mat-raised-button color="primary" (click)="atualizar(vaga.id)">Atualizar Vaga</button>
+    <button mat-raised-button color="primary" (click)="excluir(vaga.id)">Excluir Vaga</button>
+  </div>
+
+</form>
+  <section class="lista-vagas">
+    <div *ngFor="let vaga of vagas">
+
+        <div class="card" style="width: 18rem;">
+          <mat-card class="example-card" color="primary">
+
+            <mat-card-title-group>
+              <mat-card-title>{{vaga.descricao}}</mat-card-title>
+              <mat-card-subtitle>Código da vaga : {{vaga.id}} </mat-card-subtitle>
+              <img mat-card-lg-image src="assets\imgs\{{vaga.img}}" alt="Ilustração da vaga">
+            </mat-card-title-group>
+
+            <mat-card-content>
+              <p>Requisitos : {{vaga.req_obrigatorio}}</p>
+              <p>Diferencial: {{vaga.req_desejado}}</p>
+              <p>Remuneração : $R{{vaga.remunaracao}},00</p>
+              <p>Benefícios: {{vaga.beneficios}}</p>
+            </mat-card-content>
+
+          </mat-card>
+
+          <button type="button" (click)="atualizar(vaga.id)">Atualizar Vaga</button>
+          <button type="button" (click)="excluir(vaga.id)">Excluir Vaga</button>
+
+        </div>
+
+    </div>

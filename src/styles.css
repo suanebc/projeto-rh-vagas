@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html{
+  background-color: rgba(0, 0, 0, .7);
+}
+.titulo2{
+  color: white;
+  padding: 2%;
+}
+.example-card{
+  margin: 5%;
+
+}
+
+button[mat-raised-button]{
+  margin: 1%;
+}
+.example-full-width {
+  margin-left: 2%;
+}
+.my-rodape {
+  color: white;
+  margin: 1%;
+}
+.my-div {
+  background-color: antiquewhite;
+  height: 12%;
+}
+.my-links {
+  text-decoration: none;
+  margin: 2%;
+  color: #C2185B;
+  font-size: 16px;
+
+}
+.my-links:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
